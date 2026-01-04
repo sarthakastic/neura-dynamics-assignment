@@ -6,6 +6,10 @@ A modern, responsive e-commerce product catalog application built with React and
 
 This is a full-featured product catalog application that integrates with the [Fake Store API](https://fakestoreapi.com) to display a wide range of products. The application provides an intuitive user interface with powerful search, filtering, and sorting capabilities. Users can explore products, view detailed information, and save their favorite items for quick access.
 
+### Live Link
+
+https://neura-dynamics-assignment-iota.vercel.app/
+
 ### Key Highlights
 
 - **Responsive Design**: Fully responsive layout that works seamlessly across all device sizes
@@ -93,7 +97,7 @@ This is a full-featured product catalog application that integrates with the [Fa
 1. **Clone the repository**
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/sarthakastic/neura-dynamics-assignment.git
    cd neura-dynamics-assignment
    ```
 
@@ -236,6 +240,19 @@ The project maintains high test coverage across all major components and functio
 - **Hooks**: Complete coverage of custom hook logic
 - **Integration Tests**: End-to-end coverage of user flows
 
+- 📊 Overall Test Coverage Summary
+
+┌─────────────┬──────────┬──────────┬──────────┐
+│ Category    │ Coverage │ Covered  │ Total    │
+├─────────────┼──────────┼──────────┼──────────┤
+│ Statements  │  79.79% │     1232 │     1544 │
+│ Branches    │  88.33% │      159 │      180 │
+│ Functions   │  81.40% │       35 │       43 │
+│ Lines       │  79.79% │     1232 │     1544 │
+└─────────────┴──────────┴──────────┴──────────┘
+
+🎯 Overall Coverage: 82.33%
+
 To view the detailed coverage report:
 
 ```bash
@@ -327,10 +344,6 @@ The application uses **Redux Toolkit** for centralized state management:
 - **createAsyncThunk**: Used for API calls (fetchProducts, fetchProductById, fetchProductByCategory)
 - **Redux Thunks**: Handle async operations with proper loading and error states
 
-#### Selectors
-
-- **createSelector**: Memoized selectors for efficient data filtering and transformation
-- **Custom Hooks**: `useFilteredProducts` combines filters and sorting logic
 
 ### Component Architecture
 
@@ -352,12 +365,6 @@ App
             └── ProductCard (multiple)
 ```
 
-#### Component Types
-
-1. **Pages**: Top-level route components (Home, ProductDetail, MyFavourites)
-2. **Features**: Feature-specific components (SearchBar, CategoryFilter, SortByPrice)
-3. **UI Components**: Reusable base components (Button, EmptyState, Shimmer)
-4. **Skeletons**: Loading state components
 
 ### Data Flow
 
@@ -378,13 +385,6 @@ App
 
 ## 📝 Additional Notes
 
-### Performance Optimizations
-
-- **Debounced Search**: Reduces API calls and improves performance
-- **Memoized Selectors**: Efficient data filtering with Redux selectors
-- **Code Splitting**: Route-based code splitting with React Router
-- **Lazy Loading**: Skeleton loaders for better perceived performance
-
 ### Accessibility
 
 - Semantic HTML elements
@@ -396,15 +396,3 @@ App
 
 - Modern browsers (Chrome, Firefox, Safari, Edge)
 - Responsive design for mobile, tablet, and desktop
-
-## 📄 License
-
-This project is part of a technical assignment.
-
-## 👤 Author
-
-Built as part of the Neura Dynamics assignment.
-
----
-
-**Note**: This application uses the [Fake Store API](https://fakestoreapi.com) for demonstration purposes. In a production environment, this would be replaced with a real backend API.
